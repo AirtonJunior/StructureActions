@@ -16,6 +16,7 @@ Um item de ajuda foi criado onde pode encontrar todas as informações sobre a f
 
 # Como Funciona
 Ao iniciar a ferramenta ela exibe o Splash Screen.
+
 <center>
 Splash Screen
 
@@ -27,11 +28,13 @@ Depois é aberto a Home (tela principal), toda a ferramenta funciona dentro dess
 É possível criar um projeto do zero ou importar os dados com o arquivo CSV que será explicado na próxima seção. 
 
 Quando for salvar os dados é necessário estar com um projeto aberto, no caso de imprimir o resultado tem que estar com a página do resultado aberta.
+
 <center>
 Tela Home
 
 ![Webserver UI](image/home.png "Home")
 </center>
+
 Ao clicar em importar (Abrir) ou apertar em Ctrl+O é aberta uma janela para a seleção de um arquivo CSV, após selecionado a ferramenta abre a janela de “Criar Novo” (essa janela é do tipo diagnostico que bloquei o restante da ferramenta até que ela seja fechada pelo botão “X” que cancela a operação ou pelo botão “AVANÇAR” para concluir a operação), o nome do arquivo é colocado no título da janela, nessa tela tem que ser selecionado o  “Tipo de Concreto Estrutural” e “Combinações de Ações (ELU)”, em seguida clicar no botão “AVANÇAR”. Com isso a ferramenta faz uma validação de todos os dados para identificar possíveis inconsistências de dados, caso encontre é aberto uma janela informada o que está errado e finaliza o processo de importação.
 
 Quando importado um arquivo sem erro a ferramenta abre a janela com a lista de ações que será explicada mais a diante. É possível evitar a janela “Criar Novo” inserindo a sigla do “Tipo de Concreto Estrutural” e “Combinações de Ações (ELU)” no nome do arquivo da seguinte forma: 
@@ -39,11 +42,13 @@ Quando importado um arquivo sem erro a ferramenta abre a janela com a lista de a
 <nomedeidentificacao>_<SiglaTipodeConcretoEstrututal>_<SilgaCombinacaodeAcaoELU>.csv
 ```
 Para o caso do “Tipo de Concreto Estrutural” de “Concreto Armado (CA)” e “Combinações de Ações (ELU)” “Normais (NO)” o nome do arquivo ficará algo como: “edificio_CA_NO.csv”.
+
 <center>
 Janela Criar Novo
 
 ![Webserver UI](image/criarnovo.png "Criar Novo")
 </center>
+
 Algo parecido ocorre ao clicar em novo ou apertar em Ctrl+N na tela de Home, porém não abre uma janela de seleção de arquivos, o título permanece com o texto “Criar Novo” e não é feito nenhuma validação, pois não tem dados para ser avaliados.
 
 O “Tipo de Concreto Estrutural” serve para definir quais as combinações do ELS serão calculadas, conforme a norma. Para a “Combinações de Ações (ELU)” além de saber qual a combinação a ser utilizada também serve para definir os coeficientes de ponderação. Opções: 
@@ -63,11 +68,13 @@ Após a configuração das informações iniciais é aberto a janela de lista de
 Na tabela é mostrado os campos fixos: Superfície, Descrição, Valor, Tipo de Ação, Efeito, Coeficiente de Ponderação (γ), Fator de Combinação (ψ0), Fator de Redução (ψ1) e Fator de Redução (ψ2). Também existe os campos variáveis que só mostra de acordo com o “Tipo de Concreto Estrutural” que são: Combinação Quase Permanentes de Serviço (CQP), Combinação Frequentes de Serviço (CF) e Combinação Raras de Serviço (CR).
 
 Ao clicar na tabela em uma linha de uma ação existente abre a janela de inserção de ação, que será detalhada a seguir, as mudanças nessa janela é que no lugar do botão “SALVAR” tem um botão “ALTERAR” e um botão “DELETAR” é mostrado para fazer a exclusão da ação.
+
 <center>
 Lista de Ações
 
 ![Webserver UI](image/configactions.png "Lista de Ações")
 </center>
+
 Quando clica no botão “NOVA AÇÃO” é aberto uma janela do tipo diagnostico, com todas as informações que são necessárias para o cálculo e para separar os dados por superfície (elemento construtivo). Para um melhor entendimento a seguir a importância de cada dado:
 
 - Descrição: A descrição serve para a identificação das ações, em uma mesma superfície não pode existir descrições iguais, o valor informado deve ser alfanumérico de no mínimo 5 (cinco) caracteres;
@@ -85,6 +92,7 @@ Quando clica no botão “NOVA AÇÃO” é aberto uma janela do tipo diagnostic
 - Efeito: Informado se a ação permanente é “Desfavorável (D)” ou “Favorável (F)”, é utilizado para identificar o fator de ponderação; 
 - Superfície: Tem duas opções, primeiro criar uma superfície nova ou selecionar uma superfície já existente, todas as contas são feitas por superfície, o dado informado deve ser um valor alfanumérico de no mínimo 5 caracteres.
 - Combinações de Ações – ELU: Nessa parte tem que ser informada as combinações do Estado Limite de Serviço que a ação faz parte, é exibido as combinações que faz parte do “Tipo de Concreto Estrutural” de acordo com a norma; A janela do modelo para as ações permanente pode ser visualizada na figura a seguir.
+
 <center>
 Adição e Edição das Ações
 
@@ -92,16 +100,19 @@ Adição e Edição das Ações
 </center>
  
 As ações variáveis necessitam de mais informações, o fator de combinação e os fatores de redução, porém não necessita do efeito, com isso a janela abre mais uma opção onde deve informar a partir de uma tabela a categoria que a ação variável faz parte. Para as ações variáveis gerais tem as três opções de carga acidental e a opção do vento, quando é uma ação variável de temperatura só exibe a opção de temperatura. Conforme a figura a seguir que mostra a opção variável geral selecionada:
+
 <center>
 Configuração das Ações – Ações Variáveis
 
 ![Webserver UI](image/edicaovariavel.png "Configuração das Ações – Ações Variáveis")
 </center>
+
 Quando tenta inserir ou editar uma ação é feito uma validação dos dados, onde verifica se existe alguma configuração que não está de acordo com a norma ou com a configuração inicial.
 
 Após inserir todas as informações pode ser visualizado o resultado com o memorial de cálculo ao clicar no botão “RESULTADO” na janela de lista de ações, nesse momento é feito uma verificação de inconsistência de dados por superfície e somente se tiver tudo de acordo é possível ver o resultado.
 
 Para as combinações ELU é validado se existe no mínimo uma ação direta permanente e uma ação direta variável, no caso das combinações do ELS é verificado se existe uma ação permanente e uma variável independente do tipo direto ou indireto. Quando selecionado a combinação ELU “Excepcionais (EX)” é verificado se existe uma ação deste tipo. 
+
 <center>
 Resultado
  
@@ -112,16 +123,19 @@ Resultado
 O arquivo de importação é do tipo CSV que significa “comma-separated-values” (valores separados por vírgulas), porém na ferramenta foi utilizado uma variação desse tipo que em vez de usar a vírgula é utilizado o ponto e vírgula (;). Esse tipo de arquivo é utilizado para transferência de informações entre sistemas distintos, sabendo-se a estrutura dos dados qualquer sistema consegui interpretar, pois a sua leitura é como um arquivo de texto simples.
 
 O Excel consegue gerar arquivos CSV, para o tipo separado por ponto e vírgula (;) deve-se “Salvar uma Cópia” e selecione a opção "CSV (Macintosh) (*.csv)" ou "CSV (MS-DOS) (*.csv)". Além de gerar o Excel consegui alterar esse tipo de arquivo, tornando a utilização desse tipo de arquivo muito versátil por muitas pessoas saber utilizar o Excel. A seguir um exemplo básico de CSV: 
+
 <center>
 Exemplo de Arquivo CSV no Excel
  
 ![Webserver UI](image/exemplocsvexcel.png "Exemplo de Arquivo CSV no Excel")
 </center>
+
 <center>
 Exemplo de Arquivo CSV no Editor de Texto
  
 ![Webserver UI](image/exemplocsveditor.png "Exemplo de Arquivo CSV no Editor de Texto")
 </center>
+
 Para a Ferramenta entender o arquivo de importação é preciso que na primeira linha tenha um cabeçalho com os seguintes campos: superfície, tipo, descricao, valor, efeito, fator, cqp, cf e cr. Nas demais linhas as informações correspondentes de cada ações, sendo uma ação por linha. Basicamente o arquivo de importação salva todas as ações a parti de uma planilha orientada, logo isso ajuda o usuário a inserir de forma mais prática as ações.
 
 A seguir a explicação de cada um dos itens do cabeçalho:
@@ -162,11 +176,13 @@ A seguir a explicação de cada um dos itens do cabeçalho:
     - OBS.: Vazio para os demais Tipo de Concreto Estrutural.
 
 A seguir exemplo do cabeçalho no Excel e no Editor de Texto:
+
 <center>
 Exemplo do Cabeçalho no Excel
  
 ![Webserver UI](image/cabecalhocsvexcel.png "Exemplo do Cabeçalho no Excel")
 </center>
+
 <center>
 Exemplo do Cabeçalho no Editor de Texto
  
