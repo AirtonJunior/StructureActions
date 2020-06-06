@@ -13,27 +13,27 @@ Um item de ajuda foi criado onde pode encontrar todas as informações sobre a f
 
 # Como Funciona
 Ao iniciar a ferramenta ela exibe o Splash Screen por 3 segundos, nessa tela é exibido: nome da ferramenta, subtítulo do TCC, nome dos integrantes, nome do orientador e logo da Uninove.
-
+<center>
 Splash Screen
 
 ![Webserver UI](image/splashscreen.png "Splash Screen")
- 
+</center>
 Depois do Splash Screen é aberto a Home (tela principal), toda a ferramenta funciona dentro dessa tela e é onde tem os principais botões como: criar um novo projeto, importar dados, salvar os dados, imprimir o resultado, organizar as janelas (telas internas), ajuda, entre outros.
 É possível criar um projeto do zero ou importar os dados com o arquivo CSV que será explicado na próxima seção. Quando for salvar os dados é necessário estar com um projeto aberto, no caso de imprimir o resultado tem que estar com a página do resultado aberta.
-Figura 7 – Tela Home
- 
-
+<center>
+Tela Home
+![Webserver UI](image/splashscreen.png "Home")
+</center>
 Ao clicar em importar (Abrir) ou apertar em Ctrl+O é aberta uma janela para a seleção de um arquivo CSV, após selecionado a ferramenta abre a janela de “Criar Novo” (essa janela é do tipo diagnostico que bloquei o restante da ferramenta até que ela seja fechada pelo botão “X” que cancela a operação ou pelo botão “AVANÇAR” para concluir a operação), o nome do arquivo é colocado no título da janela, nessa tela tem que ser selecionado o  “Tipo de Concreto Estrutural” e “Combinações de Ações (ELU)”, em seguida clicar no botão “AVANÇAR”. Com isso a ferramenta faz uma validação de todos os dados para identificar possíveis inconsistências de dados, caso encontre é aberto uma janela informada o que está errado e finaliza o processo de importação. 
 Quando importado um arquivo sem erro a ferramenta abre a janela com a lista de ações que será explicada mais a diante. É possível evitar a janela “Criar Novo” inserindo a sigla do “Tipo de Concreto Estrutural” e “Combinações de Ações (ELU)” no nome do arquivo da seguinte forma: 
 <nomedeidentificacao>_<SiglaTipodeConcretoEstrututal>_<SilgaCombinacaodeAcaoELU>.csv
 
 Para o caso do “Tipo de Concreto Estrutural” de “Concreto Armado (CA)” e “Combinações de Ações (ELU)” “Normais (NO)” o nome do arquivo ficará algo como: “edificio_CA_NO.csv”.
-
+<center>
 Janela Criar Novo
 
 ![Webserver UI](image/criarnovo.png "Criar Novo")
-   
-
+</center>
 Algo parecido ocorre ao clicar em novo ou apertar em Ctrl+N na tela de Home, porém não abre uma janela de seleção de arquivos, o título permanece com o texto “Criar Novo” e não é feito nenhuma validação, pois não tem dados para ser avaliados.
 O “Tipo de Concreto Estrutural” serve para definir quais as combinações do ELS serão calculadas, conforme a norma. Para a “Combinações de Ações (ELU)” além de saber qual a combinação a ser utilizada também serve para definir os coeficientes de ponderação. Opções: 
 - Tipo de Concreto Estrutural:
@@ -131,17 +131,9 @@ A seguir exemplo do cabeçalho no Excel e no Editor de Texto:
 Figura 15 – Exemplo do Cabeçalho no Excel
  
 Figura 16 – Exemplo do Cabeçalho no Editor de Texto
- 
 
-
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="hosted_button_id" value="9RFKTYR4NUUU8" />
-<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" />
-<img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
-</form>
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9RFKTYR4NUUU8&source=url
+| Paypal | 
+| ------ | 
+| [![](https://www.paypalobjects.com/pt_BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9RFKTYR4NUUU8) |
 
 
