@@ -1,0 +1,6 @@
+superficie;tipo;descricao;valor;efeito;fator;CQP;CF;Cr
+PAREDE ESQUERDA;PG;Permanente 1;10,99;f;;;s;
+PAREDE ESQUERDA;Pr;Permanente 3;20;d;;;s;
+PAREDE ESQUERDA;vg;Vento;10;;v;;s;
+PAREDE ESQUERDA;vg;Garagem;30;;a3 ;;s;
+pAREDE ESQUERDA;VT;Temperatura;20;;T;;s;
