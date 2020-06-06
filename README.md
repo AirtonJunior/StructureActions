@@ -15,15 +15,18 @@ Outro recurso é a criação de um importador em formato CSV (ponto e vírgula),
 Um item de ajuda foi criado onde pode encontrar todas as informações sobre a ferramenta, além de como utilizá-la e como criar o arquivo de importação.
 
 # Como Funciona
-Ao iniciar a ferramenta ela exibe o Splash Screen por 3 segundos, nessa tela é exibido: nome da ferramenta, subtítulo do TCC, nome dos integrantes, nome do orientador e logo da Uninove.
+Ao iniciar a ferramenta ela exibe o Splash Screen.
 <center>
 Splash Screen
 
 ![Webserver UI](image/splashscreen.png "Splash Screen")
 </center>
-Depois do Splash Screen é aberto a Home (tela principal), toda a ferramenta funciona dentro dessa tela e é onde tem os principais botões como: criar um novo projeto, importar dados, salvar os dados, imprimir o resultado, organizar as janelas (telas internas), ajuda, entre outros.
 
-É possível criar um projeto do zero ou importar os dados com o arquivo CSV que será explicado na próxima seção. Quando for salvar os dados é necessário estar com um projeto aberto, no caso de imprimir o resultado tem que estar com a página do resultado aberta.
+Depois é aberto a Home (tela principal), toda a ferramenta funciona dentro dessa tela e é onde tem os principais botões como: criar um novo projeto, importar dados, salvar os dados, imprimir o resultado, organizar as janelas (telas internas), ajuda, entre outros.
+
+É possível criar um projeto do zero ou importar os dados com o arquivo CSV que será explicado na próxima seção. 
+
+Quando for salvar os dados é necessário estar com um projeto aberto, no caso de imprimir o resultado tem que estar com a página do resultado aberta.
 <center>
 Tela Home
 
