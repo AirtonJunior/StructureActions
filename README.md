@@ -188,10 +188,3 @@ Exemplo do Cabeçalho no Editor de Texto
  
 ![Webserver UI](image/cabecalhocsveditor.png "Exemplo do Cabeçalho no Editor de Texto")
 </center>
-
-# Doar
-| Paypal | 
-| ------ | 
-| [![](https://www.paypalobjects.com/pt_BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9RFKTYR4NUUU8) |
-
-
