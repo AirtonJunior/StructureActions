@@ -14,6 +14,9 @@ Outro recurso é a criação de um importador em formato CSV (ponto e vírgula),
 
 Um item de ajuda foi criado onde pode encontrar todas as informações sobre a ferramenta, além de como utilizá-la e como criar o arquivo de importação.
 
+# Baixar a Ferramenta Computacional
+Click [aqui](https://github.com/AirtonJunior/StructureActions/releases)
+
 # Como Funciona
 Ao iniciar a ferramenta ela exibe o Splash Screen.
 
@@ -188,3 +191,6 @@ Exemplo do Cabeçalho no Editor de Texto
  
 ![Webserver UI](image/cabecalhocsveditor.png "Exemplo do Cabeçalho no Editor de Texto")
 </center>
+
+# TCC na Íntegra
+Click [aqui](https://github.com/AirtonJunior/StructureActions/tree/master/tcc)
