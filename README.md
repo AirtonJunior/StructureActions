@@ -81,7 +81,7 @@ Lista de Ações
 Quando clica no botão “NOVA AÇÃO” é aberto uma janela do tipo diagnostico, com todas as informações que são necessárias para o cálculo e para separar os dados por superfície (elemento construtivo). Para um melhor entendimento a seguir a importância de cada dado:
 
 - Descrição: A descrição serve para a identificação das ações, em uma mesma superfície não pode existir descrições iguais, o valor informado deve ser alfanumérico de no mínimo 5 (cinco) caracteres;
-- Valor: É o valor numérico do esforço que a ação transmite para a superfície em kN.m;
+- Valor: É o valor numérico do esforço que a ação transmite para a superfície em kN/m;
 - Tipo de Ação: Deve ser checado umas das opções de acordo com a ação que está sendo configurada, esse valor é utilizado juntamente com outros dados para definir o valor do coeficiente de ponderação (γ), as opções são as seguintes:
     - Permanentes:
         - Gerais (PG);
@@ -151,7 +151,7 @@ A seguir a explicação de cada um dos itens do cabeçalho:
     - VT – Variável de Temperatura;
     - EX – Excepcional (Utilizado somente para a Combinações Excepcionais do ELU).
 - descricao – Informa uma descrição para identificação da ação, é um valor alfanumérico de no mínimo 5 caracteres;
-- valor – Informa o valor da força atuante na estrutura em kN.m, é um valor numérico;
+- valor – Informa o valor da força atuante na estrutura em kN/m, é um valor numérico;
 - efeito – Serva para identificar o fator de ponderação da ação permanente, utilize um dos tipos a seguir:
     - D – Desfavorável;
     - F – Favorável;
