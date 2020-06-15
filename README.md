@@ -15,7 +15,8 @@ Outro recurso é a criação de um importador em formato CSV (ponto e vírgula),
 Um item de ajuda foi criado onde pode encontrar todas as informações sobre a ferramenta, além de como utilizá-la e como criar o arquivo de importação.
 
 # Baixar a Ferramenta Computacional
-Click [aqui](https://github.com/AirtonJunior/StructureActions/releases)
+Click [aqui](https://github.com/AirtonJunior/StructureActions/releases) e baixe os arquivos "setup.exe" e "StructureActions.msi", depois de baixar click duas vezes no arquivo "StructureActions.msi".
+
 
 # Como Funciona
 Ao iniciar a ferramenta ela exibe o Splash Screen.
