@@ -5,7 +5,7 @@
 <b>Departamento:</b> Engenharia Civil<br>
 <b>Orientador:</b> Prof.º Me. Jorge Alberto Cecin<br>
 
-# Justificativ
+# Justificativa
 Muitos estudantes de engenharia civil e até mesmo engenheiros civis, tem muito trabalho e muitas vezes cometem erros no momento dos cálculos de combinações das ações, já que exigem muita atenção para criar as diversas possibilidade de combinações e de coletar os fatores exigidos pela normatização. Atualmente em toda edificação deve ser considerada a atuação do vento, tornando as combinações imprescindíveis.
 
 Fazer um estudo sobre as ações existentes em uma estrutura, a fim de compreender quais são as combinações recomendadas por norma e os fatores dessas combinações, como também entender quais combinações são necessárias para cada tipo de estrutura, é uma das coisas mais importantes na etapa de elaboração de um projeto. Uma ferramenta que auxilia nos cálculos normalmente diminui as chances de erro, tornando-se muito útil, deixando simples o que antes era muito trabalhoso.
